@@ -9,16 +9,16 @@ const {
   removeReaction
 } = require('../../controllers/thoughtController');
 
-// /api/thoughts
+// Route that manages getting thoughts and posting them
 router.route('/').get(getThoughts).post(createThought);
 
-// /api/thoughts/:thoughtId
+// Route that manages updating thoughts or deleting them
 router.route('/:thoughtId').get(getSingleThought).put(updateThought).delete(deleteThought);
 
-// /api/thoughts/:thoughtId/reactions
+// Route that lets you add reactions to a thought
 router.route('/:thoughtId/reactions').post(addReaction);
 
-// /api/thoughts/:thoughtId/reactions/:reactionId
+// Route that lets you delete reactions from a thought
 router.route('/:thoughtId/reactions/:reactionId').delete(removeReaction);
 
 module.exports = router;
