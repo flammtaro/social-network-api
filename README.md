@@ -13,6 +13,9 @@ To install this project, you need to:
 ## Usage
 This code uses Insomnia to seed data into the application, and as a result is required to use properly. To use otherwise, download the code from the github repo, and run the index.js file. 
 
+## Video
+https://youtu.be/bAnurL-PSOs
+
 ## Credits
 This project was created by Reid Somers Flamm. 
 
